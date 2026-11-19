@@ -1,0 +1,18 @@
+LangGraph virtual environment setup commands
+============================================
+
+Command Prompt (cmd.exe):
+cd /d D:\LangGraph
+myenv\Scripts\activate
+python --version
+python -m pip --version
+
+PowerShell:
+Set-Location D:\LangGraph
+.\myenv\Scripts\Activate.ps1
+python --version
+python -m pip --version
+
+Install or update LangGraph:
+python -m pip install --upgrade pip
+python -m pip install -U langgraph

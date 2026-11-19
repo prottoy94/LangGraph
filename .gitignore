@@ -1,0 +1,34 @@
+# Secrets / API keys
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.json
+
+# Virtual environments
+myenv/
+venv/
+.venv/
+env/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# LangGraph / local data
+.langgraph_api/
+*.db
+*.sqlite
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
