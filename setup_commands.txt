@@ -16,3 +16,6 @@ python -m pip --version
 Install or update LangGraph:
 python -m pip install --upgrade pip
 python -m pip install -U langgraph
+
+Install the Gemini and Groq integrations:
+python -m pip install -U langchain-google-genai langchain-groq python-dotenv
