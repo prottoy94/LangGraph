@@ -1,0 +1,18 @@
+Run the Streamlit chatbots (PowerShell)
+
+cd d:\LangGraph\Chatbot
+..\myenv\Scripts\activate
+
+Basic chatbot:
+streamlit run streamlit_frontend.py
+
+Chatbot with streaming:
+streamlit run streamlit_frontend_with_streaming.py
+
+Multi-threading chatbot:
+streamlit run streamlit_multi_threading_chatbot.py
+
+Notes:
+- Opens at http://localhost:8501. Stop with Ctrl+C.
+- Restart Streamlit after editing langgraph_backend.py (it caches imported modules).
+- Needs OPENROUTER_API_KEY in d:\LangGraph\.env
