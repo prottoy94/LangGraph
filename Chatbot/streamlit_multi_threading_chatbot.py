@@ -18,7 +18,8 @@ def add_thread(thread_id):
         
 def load_conversation(thread_id):
     CONFIG = {'configurable': {'thread_id': thread_id}}
-    return chatbot.get_state(config=CONFIG).values['messages']
+    # a brand-new thread has no saved state yet, so fall back to an empty list
+    return chatbot.get_state(config=CONFIG).values.get('messages', [])
 
 if 'message_history' not in st.session_state:
     st.session_state['message_history'] = []
